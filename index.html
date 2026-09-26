@@ -1,1188 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Miss Ellie's Cafe | Cafe in Bitterne, Southampton</title>
-
-  <meta name="description"
-    content="Miss Ellie's Cafe in Bitterne, Southampton. Freshly cooked breakfasts, sandwiches, baguettes, homemade meals, coffee and more.">
-
-  <!-- Google Fonts -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Miss Ellie's Cafe in Bitterne Park, Southampton. Breakfasts, sandwiches, baps, baguettes and hot drinks." />
+  <title>Miss Ellie's Cafe | Bitterne Park, Southampton</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <meta name="theme-color" content="#FFF9F5">
-
-  <!-- Google Business Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CafeOrCoffeeShop",
-    "name": "Miss Ellie's Cafe",
-    "description": "Independent cafe in Bitterne Park, Southampton serving breakfasts, sandwiches, baguettes, homemade meals and hot drinks.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "31A Manor Farm Road, Bitterne Park Triangle",
-      "addressLocality": "Southampton",
-      "postalCode": "SO18 1NN",
-      "addressCountry": "GB"
-    }
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-
 <body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Open Wednesday–Sunday · 8:30am–3:00pm</span>
+      <div class="topbar-links">
+        <a href="tel:07759961038">07759 961038</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
 
-<!-- ======================================================
-                     NAVIGATION
-====================================================== -->
-
-<header class="site-header" id="site-header">
-
-  <div class="container header-inner">
-
-    <a class="brand" href="#home">
-
-      <img
-        src="images/logo.png"
-        alt="Miss Ellie's Cafe logo"
-        class="brand-logo">
-
-      <span class="brand-name">
-        Miss Ellie's Cafe
-      </span>
-
-    </a>
-
-
-    <nav class="nav">
-
-      <ul class="nav-list">
-
-        <li><a href="#home" data-scroll>Home</a></li>
-
-        <li><a href="#about" data-scroll>About</a></li>
-
-        <li><a href="#menu" data-scroll>Menu</a></li>
-
-        <li><a href="#specials" data-scroll>Weekly Specials</a></li>
-
-        <li><a href="#gallery" data-scroll>Gallery</a></li>
-
-        <li><a href="#reviews" data-scroll>Reviews</a></li>
-
-        <li><a href="#visit" data-scroll>Visit Us</a></li>
-
-      </ul>
-
-      <a class="btn btn-accent" href="#menu">
-        View Menu
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Miss Ellie's Cafe home">
+        <img src="assets/miss-ellies-logo.png" alt="Miss Ellie's Cafe logo">
       </a>
 
-    </nav>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#location">Find Us</a>
+        <a class="nav-cta" href="tel:07759961038">Call Us</a>
+      </nav>
+    </div>
+  </header>
 
-    <button
-      class="hamburger"
-      id="menu-toggle"
-      aria-expanded="false"
-      aria-controls="mobile-nav">
-
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-
-    </button>
-
-  </div>
-
-
-  <!-- MOBILE MENU -->
-
-  <nav
-    class="mobile-nav"
-    id="mobile-nav"
-    aria-hidden="true">
-
-    <ul>
-
-      <li><a href="#home" data-scroll>Home</a></li>
-
-      <li><a href="#about" data-scroll>About</a></li>
-
-      <li><a href="#menu" data-scroll>Menu</a></li>
-
-      <li><a href="#specials" data-scroll>Weekly Specials</a></li>
-
-      <li><a href="#gallery" data-scroll>Gallery</a></li>
-
-      <li><a href="#reviews" data-scroll>Reviews</a></li>
-
-      <li><a href="#visit" data-scroll>Visit Us</a></li>
-
-    </ul>
-
-  </nav>
-
-</header>
-
-
-
-<main>
-
-
-<!-- ======================================================
-                         HERO
-====================================================== -->
-
-<section id="home" class="hero">
-
-  <div class="container hero-grid">
-
-    <div class="hero-content">
-
-      <span class="eyebrow">
-        WELCOME TO MISS ELLIE'S
-      </span>
-
-      <h1>
-        Good Food.<br>
-        Great Coffee.<br>
-        <span>Made With Love.</span>
-      </h1>
-
-      <p>
-        A friendly independent cafe in Bitterne Park,
-        Southampton serving freshly cooked breakfasts,
-        sandwiches, baguettes, homemade favourites and
-        great coffee.
-      </p>
-
-
-      <div class="hero-buttons">
-
-        <a
-          href="#menu"
-          class="btn btn-accent"
-          data-scroll>
-
-          View Our Menu
-
-        </a>
-
-
-        <a
-          href="#visit"
-          class="btn btn-outline"
-          data-scroll>
-
-          Find Us
-
-        </a>
-
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <img class="hero-image" src="assets/breakfast-hero.webp" alt="Cooked breakfast with fried egg, toast, hash brown, mushrooms and beans" width="1219" height="1422" fetchpriority="high">
+      <div class="container hero-content">
+        <span class="eyebrow">Bitterne Park · Southampton</span>
+        <h1>Proper breakfast.<br><em>Made with care.</em></h1>
+        <p>Classic cooked breakfasts, fresh sandwiches, baps, baguettes and a proper cup of tea.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">View Menu</a>
+          <a class="btn btn-light" href="#location">Get Directions</a>
+        </div>
       </div>
+    </section>
 
-
-      <div class="local-badge">
-        Your Local Cafe in Bitterne Park
+    <section class="quick-info">
+      <div class="container info-grid">
+        <div>
+          <span class="info-label">Opening Hours</span>
+          <strong>Wed–Sun, 8:30–3:00</strong>
+        </div>
+        <div>
+          <span class="info-label">Find Us</span>
+          <strong>31a Manor Farm Rd</strong>
+        </div>
+        <div>
+          <span class="info-label">Call</span>
+          <strong><a href="tel:07759961038">07759 961038</a></strong>
+        </div>
       </div>
+    </section>
 
-    </div>
-
-
-    <div class="hero-media">
-
-      <img
-        src="images/cafe-hero.jpg"
-        alt="Fresh breakfast at Miss Ellie's Cafe">
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                         ABOUT
-====================================================== -->
-
-<section id="about" class="section about">
-
-  <div class="container about-grid">
-
-    <div class="about-image">
-
-      <img
-        src="images/cafe-interior.jpg"
-        alt="Inside Miss Ellie's Cafe">
-
-    </div>
-
-
-    <div class="about-content">
-
-      <span class="eyebrow">
-        ABOUT MISS ELLIE'S
-      </span>
-
-      <h2>
-        A Proper Local Cafe
-      </h2>
-
-      <p>
-        Miss Ellie's Cafe is a welcoming local cafe in
-        Bitterne Park, Southampton. Whether you're stopping
-        by for a cooked breakfast, grabbing a sandwich or
-        sitting down with a hot drink, our menu has plenty
-        of comforting cafe favourites to choose from.
-      </p>
-
-
-      <div class="about-features">
-
-        <div class="feature">
-          <strong>Freshly Prepared</strong>
-          <span>Food prepared for you to enjoy.</span>
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow pink">Our Menu</span>
+          <h2>Something for everyone.</h2>
+          <p>Tap a category to quickly browse the menu.</p>
         </div>
 
-        <div class="feature">
-          <strong>Local Cafe</strong>
-          <span>A welcoming neighbourhood atmosphere.</span>
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" data-target="breakfast">Breakfast</button>
+          <button class="menu-tab" data-target="sandwiches">Sandwiches</button>
+          <button class="menu-tab" data-target="baps">Baps</button>
+          <button class="menu-tab" data-target="baguettes">Baguettes</button>
+          <button class="menu-tab" data-target="drinks">Hot Drinks</button>
         </div>
 
-        <div class="feature">
-          <strong>Breakfast & Lunch</strong>
-          <span>From cooked breakfasts to homemade favourites.</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                    BREAKFAST MENU
-====================================================== -->
-
-<section id="menu" class="section menu-section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        OUR MENU
-      </span>
-
-      <h2>
-        Breakfast Favourites
-      </h2>
-
-      <p>
-        Start your day with one of our classic cooked breakfasts.
-      </p>
-
-    </div>
-
-
-
-    <div class="breakfast-grid">
-
-
-      <!-- FULL BREAKFAST -->
-
-      <article class="card breakfast-card">
-
-        <div class="card-image">
-
-          <img
-            src="images/full-breakfast.jpg"
-            alt="Full English breakfast">
-
-        </div>
-
-        <div class="card-content">
-
-          <div class="menu-title">
-
-            <h3>Full Breakfast</h3>
-
-            <span class="price">
-              £9.50
-            </span>
-
+        <div class="menu-panel active" id="breakfast">
+          <div class="menu-intro">
+            <h3>Breakfast Favourites</h3>
+            <p>Start your day with one of our classic cooked breakfasts.</p>
           </div>
-
-          <p>
-            2 Bacon • 2 Sausages • 2 Fried Eggs •
-            2 Hash Browns • Baked Beans • Tomatoes •
-            2 Slices of Toast & Butter
-          </p>
-
-        </div>
-
-      </article>
-
-
-
-      <!-- LITE BREAKFAST -->
-
-      <article class="card breakfast-card">
-
-        <div class="card-image">
-
-          <img
-            src="images/lite-breakfast.jpg"
-            alt="Lite cooked breakfast">
-
-        </div>
-
-        <div class="card-content">
-
-          <div class="menu-title">
-
-            <h3>Lite Breakfast</h3>
-
-            <span class="price">
-              £8.00
-            </span>
-
+          <div class="breakfast-grid">
+            <article class="food-card feature-card">
+              <img src="assets/breakfast-hero.webp" alt="Cooked breakfast with egg, toast and beans" width="1219" height="1422" loading="lazy" decoding="async">
+              <div class="food-card-body">
+                <div class="item-title"><h4>Full Breakfast</h4><span>£9.50</span></div>
+                <p>2 Bacon · 2 Sausages · 2 Fried Eggs · 2 Hash Browns · Baked Beans · Tomatoes · 2 Slices of Toast & Butter</p>
+              </div>
+            </article>
+            <article class="food-card">
+              <div class="food-photo lite-photo"><img src="assets/lite-breakfast-photo.webp" alt="Breakfast plate with fried egg, bacon, beans and toast" width="1762" height="1294" loading="lazy" decoding="async"></div>
+              <div class="food-card-body">
+                <div class="item-title"><h4>Lite Breakfast</h4><span>£8.00</span></div>
+                <p>1 Sausage · 1 Bacon · 1 Fried Egg · 1 Hash Brown · Baked Beans · Tomato · 1 Slice of Toast & Butter</p>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="assets/vegetarian-breakfast.webp" alt="Illustrative vegetarian breakfast with a vegetarian sausage, egg, hash brown, mushrooms, beans, tomato and toast" width="1536" height="1024" loading="lazy" decoding="async">
+              <div class="food-card-body">
+                <span class="photo-note">Illustrative image</span>
+                <div class="item-title"><h4>Vegetarian Breakfast</h4><span>£8.50</span></div>
+                <p>Vegetarian Sausage · Fried Egg · Hash Brown · Mushrooms · Baked Beans · Tomato · 1 Slice of Toast</p>
+              </div>
+            </article>
           </div>
-
-          <p>
-            1 Sausage • 1 Bacon • 1 Fried Egg •
-            1 Hash Brown • Baked Beans • Tomato •
-            1 Slice of Toast & Butter
-          </p>
-
         </div>
 
-      </article>
-
-
-
-      <!-- VEGETARIAN -->
-
-      <article class="card breakfast-card">
-
-        <div class="card-image">
-
-          <img
-            src="images/vegetarian-breakfast.jpg"
-            alt="Vegetarian breakfast">
-
-        </div>
-
-        <div class="card-content">
-
-          <div class="menu-title">
-
-            <h3>Vegetarian Breakfast</h3>
-
-            <span class="price">
-              £8.50
-            </span>
-
+        <div class="menu-panel" id="sandwiches">
+          <div class="menu-intro"><h3>Sandwiches</h3><p>Freshly prepared with your choice of filling.</p></div>
+          <div class="price-list">
+            <div><span>Bacon</span><strong>£2.50</strong></div>
+            <div><span>Sausage</span><strong>£2.50</strong></div>
+            <div><span>Egg</span><strong>£2.30</strong></div>
+            <div><span>Bacon + Egg</span><strong>£3.00</strong></div>
+            <div><span>Sausage + Egg</span><strong>£3.00</strong></div>
+            <div><span>Bacon + Sausage</span><strong>£3.00</strong></div>
+            <div><span>Bacon + Sausage + Egg</span><strong>£3.50</strong></div>
+            <div><span>Ham + Tomato</span><strong>£2.75</strong></div>
+            <div><span>Cheese + Chutney</span><strong>£2.75</strong></div>
+            <div><span>Tuna Mayonnaise</span><strong>£2.95</strong></div>
+            <div><span>Chicken Mayonnaise</span><strong>£2.95</strong></div>
+            <div><span>BLT</span><strong>£2.75</strong></div>
+            <div><span>Bacon, Brie + Cranberry</span><strong>£3.25</strong></div>
           </div>
-
-          <p>
-            Vegetarian Sausage • Fried Egg • Hash Brown •
-            Mushrooms • Baked Beans • Tomato •
-            1 Slice of Toast
-          </p>
-
         </div>
 
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-               SANDWICHES / BAPS / BAGUETTES
-====================================================== -->
-
-<section class="section sandwich-menu">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        MADE YOUR WAY
-      </span>
-
-      <h2>
-        Sandwiches, Baps & Baguettes
-      </h2>
-
-      <p>
-        Choose your favourite filling and how you'd like it served.
-      </p>
-
-    </div>
-
-
-    <div class="menu-table-wrapper">
-
-      <table class="menu-table">
-
-        <thead>
-
-          <tr>
-
-            <th>Filling</th>
-
-            <th>Sandwich</th>
-
-            <th>Bap</th>
-
-            <th>Baguette</th>
-
-          </tr>
-
-        </thead>
-
-
-        <tbody>
-
-          <tr>
-            <td>Bacon</td>
-            <td>£2.50</td>
-            <td>£2.80</td>
-            <td>£3.20</td>
-          </tr>
-
-          <tr>
-            <td>Sausage</td>
-            <td>£2.50</td>
-            <td>£2.80</td>
-            <td>£3.20</td>
-          </tr>
-
-          <tr>
-            <td>Egg</td>
-            <td>£2.30</td>
-            <td>£2.50</td>
-            <td>£2.75</td>
-          </tr>
-
-          <tr>
-            <td>Bacon + Egg</td>
-            <td>£3.00</td>
-            <td>£3.30</td>
-            <td>£3.70</td>
-          </tr>
-
-          <tr>
-            <td>Sausage + Egg</td>
-            <td>£3.00</td>
-            <td>£3.30</td>
-            <td>£3.70</td>
-          </tr>
-
-          <tr>
-            <td>Bacon + Sausage</td>
-            <td>£3.00</td>
-            <td>£3.30</td>
-            <td>£3.70</td>
-          </tr>
-
-          <tr>
-            <td>Bacon + Sausage + Egg</td>
-            <td>£3.50</td>
-            <td>£3.80</td>
-            <td>£4.20</td>
-          </tr>
-
-          <tr>
-            <td>Ham + Tomato</td>
-            <td>£2.75</td>
-            <td>£2.95</td>
-            <td>£3.20</td>
-          </tr>
-
-          <tr>
-            <td>Cheese + Chutney</td>
-            <td>£2.75</td>
-            <td>£2.95</td>
-            <td>£3.20</td>
-          </tr>
-
-          <tr>
-            <td>Tuna Mayonnaise</td>
-            <td>£2.95</td>
-            <td>£3.20</td>
-            <td>£3.95</td>
-          </tr>
-
-          <tr>
-            <td>Chicken Mayonnaise</td>
-            <td>£2.95</td>
-            <td>£3.20</td>
-            <td>£3.95</td>
-          </tr>
-
-          <tr>
-            <td>BLT</td>
-            <td>£2.75</td>
-            <td>£2.95</td>
-            <td>£3.20</td>
-          </tr>
-
-          <tr>
-            <td>Bacon, Brie + Cranberry</td>
-            <td>£3.25</td>
-            <td>£3.75</td>
-            <td>£4.20</td>
-          </tr>
-
-        </tbody>
-
-      </table>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                       HOT DRINKS
-====================================================== -->
-
-<section class="section drinks-section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        SOMETHING WARM
-      </span>
-
-      <h2>Hot Drinks</h2>
-
-    </div>
-
-
-    <div class="drinks-grid">
-
-      <div class="drink-item">
-        <span>Americano</span>
-        <strong>£1.20</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Latte</span>
-        <strong>£1.80</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Cappuccino</span>
-        <strong>£1.80</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Espresso</span>
-        <strong>£1.00</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Tea</span>
-        <strong>£1.20</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Fruit Tea</span>
-        <strong>£1.20</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Earl Grey</span>
-        <strong>£1.20</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Peppermint</span>
-        <strong>£1.20</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Mint Tea</span>
-        <strong>£1.20</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Green Tea</span>
-        <strong>£1.20</strong>
-      </div>
-
-      <div class="drink-item">
-        <span>Hot Chocolate</span>
-        <strong>£1.90</strong>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                    WEEKLY SPECIALS
-====================================================== -->
-
-<section id="specials" class="section specials-section">
-
-  <div class="container">
-
-    <div class="section-heading light">
-
-      <span class="eyebrow">
-        FRESH THIS WEEK
-      </span>
-
-      <h2>
-        What's On This Week?
-      </h2>
-
-      <p>
-        Homemade specials alongside our regular cafe favourites.
-      </p>
-
-    </div>
-
-
-    <div class="specials-grid">
-
-
-      <article class="special-card">
-
-        <span class="special-price">
-          £12.50
-        </span>
-
-        <h3>
-          Breaded Scampi Caesar Salad
-        </h3>
-
-        <p>
-          Scampi served on a bed of mixed salad and new potatoes,
-          drizzled with Caesar dressing and topped with fresh lemon
-          and grated Parmesan.
-        </p>
-
-      </article>
-
-
-
-      <article class="special-card">
-
-        <span class="special-price">
-          £11.50
-        </span>
-
-        <h3>
-          Traditional Baked Cottage Pie
-        </h3>
-
-        <p>
-          Served with buttered broccoli, garlic bread and a jug
-          of red wine gravy.
-        </p>
-
-      </article>
-
-
-
-      <article class="special-card">
-
-        <span class="special-price">
-          £11.95
-        </span>
-
-        <h3>
-          Homemade Quiche Lorraine
-        </h3>
-
-        <p>
-          Cheese and gammon quiche served with new potatoes,
-          fresh salad and creamy coleslaw.
-        </p>
-
-      </article>
-
-
-
-      <article class="special-card">
-
-        <span class="special-price">
-          £11.75
-        </span>
-
-        <h3>
-          Griddled Lamb Kofta Kebab Flatbread
-        </h3>
-
-        <p>
-          Served with sautéed peppers and onions,
-          skin-on fries and a tzatziki dip.
-        </p>
-
-      </article>
-
-    </div>
-
-
-    <p class="special-note">
-      Weekly specials may change — ask in the cafe for today's selection.
-    </p>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                         GALLERY
-====================================================== -->
-
-<section id="gallery" class="section gallery">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        MISS ELLIE'S
-      </span>
-
-      <h2>
-        From Our Kitchen
-      </h2>
-
-      <p>
-        Breakfasts, lunches and cafe favourites.
-      </p>
-
-    </div>
-
-
-    <div class="masonry">
-
-      <figure>
-        <img
-          src="images/gallery-breakfast.jpg"
-          alt="Cooked breakfast">
-      </figure>
-
-      <figure>
-        <img
-          src="images/gallery-coffee.jpg"
-          alt="Fresh coffee">
-      </figure>
-
-      <figure>
-        <img
-          src="images/gallery-sandwich.jpg"
-          alt="Fresh sandwich">
-      </figure>
-
-      <figure>
-        <img
-          src="images/gallery-cake.jpg"
-          alt="Cake at Miss Ellie's Cafe">
-      </figure>
-
-      <figure>
-        <img
-          src="images/gallery-lunch.jpg"
-          alt="Homemade lunch">
-      </figure>
-
-      <figure>
-        <img
-          src="images/gallery-cafe.jpg"
-          alt="Miss Ellie's Cafe">
-      </figure>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                       WHY VISIT
-====================================================== -->
-
-<section class="section why-us">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        WHY MISS ELLIE'S?
-      </span>
-
-      <h2>
-        Your Local Cafe
-      </h2>
-
-    </div>
-
-
-    <div class="why-grid">
-
-      <div class="why-card">
-
-        <span class="why-icon">🍳</span>
-
-        <h3>
-          Freshly Cooked Food
-        </h3>
-
-        <p>
-          Classic cafe favourites and comforting meals.
-        </p>
-
-      </div>
-
-
-      <div class="why-card">
-
-        <span class="why-icon">🥓</span>
-
-        <h3>
-          Breakfast Favourites
-        </h3>
-
-        <p>
-          Start the day with a proper cooked breakfast.
-        </p>
-
-      </div>
-
-
-      <div class="why-card">
-
-        <span class="why-icon">☕</span>
-
-        <h3>
-          Hot Coffee & Tea
-        </h3>
-
-        <p>
-          The perfect drink for your morning or lunch break.
-        </p>
-
-      </div>
-
-
-      <div class="why-card">
-
-        <span class="why-icon">♥</span>
-
-        <h3>
-          Local Atmosphere
-        </h3>
-
-        <p>
-          A friendly neighbourhood cafe in Bitterne Park.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                         REVIEWS
-====================================================== -->
-
-<section id="reviews" class="section reviews">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        CUSTOMER FEEDBACK
-      </span>
-
-      <h2>
-        What Our Customers Say
-      </h2>
-
-    </div>
-
-
-    <div class="reviews-grid">
-
-
-      <article class="review-card">
-
-        <div class="stars">
-          ★★★★★
+        <div class="menu-panel" id="baps">
+          <div class="menu-intro"><h3>Baps</h3><p>Soft baps, made to order.</p></div>
+          <div class="price-list">
+            <div><span>Bacon</span><strong>£2.80</strong></div>
+            <div><span>Sausage</span><strong>£2.80</strong></div>
+            <div><span>Egg</span><strong>£2.50</strong></div>
+            <div><span>Bacon + Egg</span><strong>£3.30</strong></div>
+            <div><span>Sausage + Egg</span><strong>£3.30</strong></div>
+            <div><span>Bacon + Sausage</span><strong>£3.30</strong></div>
+            <div><span>Bacon + Sausage + Egg</span><strong>£3.80</strong></div>
+            <div><span>Ham + Tomato</span><strong>£2.95</strong></div>
+            <div><span>Cheese + Chutney</span><strong>£2.95</strong></div>
+            <div><span>Tuna Mayonnaise</span><strong>£3.20</strong></div>
+            <div><span>Chicken Mayonnaise</span><strong>£3.20</strong></div>
+            <div><span>BLT</span><strong>£2.95</strong></div>
+            <div><span>Bacon, Brie + Cranberry</span><strong>£3.75</strong></div>
+          </div>
         </div>
 
-        <p>
-          Genuine customer review can be added here.
-        </p>
-
-        <strong>
-          Customer Review
-        </strong>
-
-      </article>
-
-
-      <article class="review-card">
-
-        <div class="stars">
-          ★★★★★
+        <div class="menu-panel" id="baguettes">
+          <div class="menu-intro"><h3>Baguettes</h3><p>Crisp baguettes packed with your favourite filling.</p></div>
+          <div class="price-list">
+            <div><span>Bacon</span><strong>£3.20</strong></div>
+            <div><span>Sausage</span><strong>£3.20</strong></div>
+            <div><span>Egg</span><strong>£2.75</strong></div>
+            <div><span>Bacon + Egg</span><strong>£3.70</strong></div>
+            <div><span>Sausage + Egg</span><strong>£3.70</strong></div>
+            <div><span>Bacon + Sausage</span><strong>£3.70</strong></div>
+            <div><span>Bacon + Sausage + Egg</span><strong>£4.20</strong></div>
+            <div><span>Ham + Tomato</span><strong>£3.20</strong></div>
+            <div><span>Cheese + Chutney</span><strong>£3.20</strong></div>
+            <div><span>Tuna Mayonnaise</span><strong>£3.95</strong></div>
+            <div><span>Chicken Mayonnaise</span><strong>£3.95</strong></div>
+            <div><span>BLT</span><strong>£3.20</strong></div>
+            <div><span>Bacon, Brie + Cranberry</span><strong>£4.20</strong></div>
+          </div>
         </div>
 
-        <p>
-          Genuine customer review can be added here.
-        </p>
-
-        <strong>
-          Customer Review
-        </strong>
-
-      </article>
-
-
-      <article class="review-card">
-
-        <div class="stars">
-          ★★★★★
+        <div class="menu-panel" id="drinks">
+          <div class="menu-intro"><h3>Hot Drinks</h3><p>Something warm to go with your breakfast or lunch.</p></div>
+          <div class="price-list drinks-list">
+            <div><span>Americano</span><strong>£1.20</strong></div>
+            <div><span>Latte</span><strong>£1.80</strong></div>
+            <div><span>Cappuccino</span><strong>£1.80</strong></div>
+            <div><span>Espresso</span><strong>£1.00</strong></div>
+            <div><span>Tea</span><strong>£1.20</strong></div>
+            <div><span>Fruit Tea</span><strong>£1.20</strong></div>
+            <div><span>Earl Grey</span><strong>£1.20</strong></div>
+            <div><span>Peppermint</span><strong>£1.20</strong></div>
+            <div><span>Mint Tea</span><strong>£1.20</strong></div>
+            <div><span>Green Tea</span><strong>£1.20</strong></div>
+            <div><span>Hot Chocolate</span><strong>£1.90</strong></div>
+          </div>
         </div>
-
-        <p>
-          Genuine customer review can be added here.
-        </p>
-
-        <strong>
-          Customer Review
-        </strong>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ======================================================
-                         VISIT US
-====================================================== -->
-
-<section id="visit" class="section visit">
-
-  <div class="container visit-inner">
-
-
-    <div class="visit-copy">
-
-      <span class="eyebrow">
-        FIND US
-      </span>
-
-      <h2>
-        Come & Visit Us
-      </h2>
-
-
-      <p class="address">
-
-        <strong>Miss Ellie's Cafe</strong><br>
-
-        31A Manor Farm Road<br>
-
-        Bitterne Park Triangle<br>
-
-        Southampton<br>
-
-        SO18 1NN
-
-      </p>
-
-
-      <p class="muted">
-        Drop by for breakfast, lunch or a hot drink.
-      </p>
-
-
-      <div class="visit-ctas">
-
-        <a
-          class="btn btn-accent"
-          href="https://www.google.com/maps/dir/?api=1&destination=31A+Manor+Farm+Road+Southampton+SO18+1NN"
-          target="_blank"
-          rel="noopener">
-
-          Get Directions
-
-        </a>
-
       </div>
+    </section>
 
+    <section class="section food-gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow pink">A little taste</span>
+          <h2 id="gallery-title">Take a closer look.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure><img src="assets/breakfast-hero.webp" alt="Close-up of a cooked breakfast" loading="lazy" decoding="async" width="1219" height="1422"><figcaption>Breakfast favourites</figcaption></figure>
+          <figure><img src="assets/strawberry-waffle.webp" alt="Waffle topped with strawberries, ice cream and pink sauce" loading="lazy" decoding="async" width="820" height="568"><figcaption>Something sweet — ask about availability</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="about">
+      <div class="container story-grid">
+        <div class="story-copy">
+          <span class="eyebrow pink">Local & Friendly</span>
+          <h2>Your neighbourhood café in Bitterne Park.</h2>
+          <p>Miss Ellie's is the kind of place you can pop into for a proper breakfast, a quick bite, or a warm drink. Simple food, friendly service and a relaxed local atmosphere.</p>
+          <a class="text-link" href="tel:07759961038">Call Miss Ellie's →</a>
+        </div>
+        <div class="story-card">
+          <span>Wednesday</span><strong>8:30am – 3:00pm</strong>
+          <span>Thursday</span><strong>8:30am – 3:00pm</strong>
+          <span>Friday</span><strong>8:30am – 3:00pm</strong>
+          <span>Saturday</span><strong>8:30am – 3:00pm</strong>
+          <span>Sunday</span><strong>8:30am – 3:00pm</strong>
+          <span>Mon & Tue</span><strong>Closed</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section" id="location">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow pink">Come & Visit</span>
+          <h2>Find Miss Ellie's.</h2>
+          <p>31a Manor Farm Rd, Southampton SO18 1NN, UK</p>
+        </div>
+        <div class="location-grid">
+          <div class="map-wrap">
+            <iframe
+              title="Map showing Miss Ellie's Cafe"
+              src="https://www.google.com/maps?q=31a%20Manor%20Farm%20Rd%2C%20Southampton%20SO18%201NN%2C%20UK&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="location-card">
+            <span class="mini-label">Address</span>
+            <h3>31a Manor Farm Rd<br>Southampton SO18 1NN</h3>
+            <p>Serving Bitterne Park and the surrounding Southampton community.</p>
+            <a class="btn btn-primary full" href="https://www.google.com/maps/search/?api=1&query=31a+Manor+Farm+Rd+Southampton+SO18+1NN" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-outline full" href="tel:07759961038">Call 07759 961038</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/miss-ellies-logo.png" alt="Miss Ellie's Cafe logo">
+        <p>Breakfast, lunch & hot drinks in Bitterne Park.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>31a Manor Farm Rd<br>Southampton SO18 1NN</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:07759961038">07759 961038</a><br><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
     </div>
-
-
-
-    <div
-      class="map-placeholder"
-      role="region"
-      aria-label="Map showing Miss Ellie's Cafe location">
-
-
-      <iframe
-        src="https://www.google.com/maps?q=31A+Manor+Farm+Road+Bitterne+Park+Triangle+Southampton+SO18+1NN&hl=en&z=16&output=embed"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Miss Ellie's Cafe location">
-      </iframe>
-
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Miss Ellie's Cafe</span>
+      <span>Made for a local Southampton favourite.</span>
     </div>
+  </footer>
 
-  </div>
-
-</section>
-
-
-</main>
-
-
-
-<!-- ======================================================
-                         FOOTER
-====================================================== -->
-
-<footer class="site-footer">
-
-  <div class="container footer-inner">
-
-
-    <div class="footer-brand">
-
-      <img
-        src="images/logo.png"
-        alt="Miss Ellie's Cafe logo"
-        class="footer-logo">
-
-      <h3>
-        Miss Ellie's Cafe
-      </h3>
-
-      <p>
-        Good food, great coffee and a warm welcome.
-      </p>
-
-    </div>
-
-
-
-    <nav class="footer-nav">
-
-      <ul>
-
-        <li><a href="#home">Home</a></li>
-
-        <li><a href="#menu">Menu</a></li>
-
-        <li><a href="#specials">Weekly Specials</a></li>
-
-        <li><a href="#gallery">Gallery</a></li>
-
-        <li><a href="#visit">Visit Us</a></li>
-
-      </ul>
-
-    </nav>
-
-
-
-    <div class="social">
-
-      <a href="#" aria-label="Facebook">
-        Facebook
-      </a>
-
-      <a href="#" aria-label="Instagram">
-        Instagram
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <div class="footer-bottom">
-
-    <div class="container">
-
-      <small>
-        © 2026 Miss Ellie's Cafe. All rights reserved.
-      </small>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-
-<!-- JavaScript -->
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
